@@ -26,6 +26,7 @@ public class FractionNumberOperationImpl implements FractionNumberOperation {
 	@Override
 	public FractionNumber sub(FractionNumber a, FractionNumber b) {
 		FractionNumber result = new FractionNumberImpl();
+		
 		result.setDivident(a.getDivident() * b.getDivisor() - b.getDivident() * a.getDivisor());
 		result.setDivisor(a.getDivisor() * b.getDivisor());
 		return result;
